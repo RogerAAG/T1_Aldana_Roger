@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\upn_i\\source\\repos\\T1_Aldana_Roger\\T1_Aldana_Roger\\wwwroot\\img\\alicorp.jpg",
+      "PackagePath": "staticwebassets\\img\\alicorp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\upn_i\\source\\repos\\T1_Aldana_Roger\\T1_Aldana_Roger\\wwwroot\\img\\ingrammicro.jpg",
+      "PackagePath": "staticwebassets\\img\\ingrammicro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\upn_i\\source\\repos\\T1_Aldana_Roger\\T1_Aldana_Roger\\wwwroot\\img\\sysco.jpg",
+      "PackagePath": "staticwebassets\\img\\sysco.jpg"
+    },
+    {
       "Id": "C:\\Users\\upn_i\\source\\repos\\T1_Aldana_Roger\\T1_Aldana_Roger\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
