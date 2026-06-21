@@ -28,5 +28,19 @@ namespace T1_Aldana_Roger.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult Alicorp()
+        {
+            return View();
+        }
+
+        public IActionResult Sysco()
+        {
+            return View();
+        }
+
+        public IActionResult IngramMicro()
+        {
+            return View();
+        }
     }
 }
