@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\T1_Aldana_Roger.props" />
+</Project>

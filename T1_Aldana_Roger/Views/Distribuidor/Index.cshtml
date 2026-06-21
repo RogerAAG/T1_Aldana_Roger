@@ -1,0 +1,64 @@
+﻿@model IEnumerable<T1_Aldana_Roger.Models.Distribuidor>
+
+@{
+    ViewData["Title"] = "Lista de Distribuidores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container pt-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de Distribuidores</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Distribuidor" asp-action="Crear" class="btn btn-primary">
+                Nuevo Distribuidor
+            </a>
+        </div>
+    </div>
+
+    <br />
+
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre Distribuidor</th>
+                    <th>Razón Social</th>
+                    <th>Teléfono</th>
+                    <th>Año Inicio</th>
+                    <th>Contacto</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.NombreDistribuidor</td>
+                        <td>@item.RazonSocial</td>
+                        <td>@item.Telefono</td>
+                        <td>@item.AnioInicioOperacion</td>
+                        <td>@item.Contacto</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a asp-controller="Distribuidor" asp-action="Editar" asp-route-id="@item.Id" class="btn btn-primary mx-1">
+                                    Editar
+                                </a>
+                                <a asp-controller="Distribuidor" asp-action="Eliminar" asp-route-id="@item.Id" class="btn btn-danger mx-1">
+                                    Eliminar
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hay registros de Distribuidor</p>
+    }
+</div>
